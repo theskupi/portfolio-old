@@ -1,6 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Layout, Seo } from "../components/index"
+import "./styles.scss"
 
 const Index = () => (
   <Layout>
