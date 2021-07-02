@@ -1,12 +1,11 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { Seo, Layout } from "../../components/index"
+import { Seo, Layout, Contact } from "../../components/index"
 
 const Playground = () => (
   <Layout>
     <Seo title="Contact" />
     <h1>Contact</h1>
-    <Link to="/">Go back to the homepage</Link>
+    <Contact />
   </Layout>
 )
 
