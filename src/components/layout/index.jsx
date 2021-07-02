@@ -10,6 +10,7 @@ const LayoutWrapper = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  padding-top: 64px;
 `
 
 const Layout = ({ children }) => {

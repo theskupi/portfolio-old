@@ -17,6 +17,7 @@ const GithubBox = () => {
             repositories(first: 8, isFork: false) {
               edges {
                 node {
+                  id
                   name
                   url
                   description
@@ -44,12 +45,13 @@ const GithubBox = () => {
           🤷‍♂️
         </span>
         <br />
-        That's not everything, that I've done. Check out <Link to="../../pages/webpages/index">webpages</Link> to see my other
+        That's not everything, that I've done. Check out{' '}
+        <Link to="../../pages/webpages/index">webpages</Link> to see my other
         projects.
       </p>
       <GithubCards>
         {edges.map(({ node }) => (
-          <GithubCard>
+          <GithubCard key={node.id}>
             <h4>
               <a href={node.url}>{node.name}</a>
             </h4>
