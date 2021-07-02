@@ -5,5 +5,6 @@ import Footer from "./footer"
 import Hero from "./hero"
 import Contact from "./contact"
 import About from "./about"
+import GithubBox from "./github-box"
 
-export { Header, Layout, Seo, Footer, Hero, Contact, About }
+export { Header, Layout, Seo, Footer, Hero, Contact, About, GithubBox }
