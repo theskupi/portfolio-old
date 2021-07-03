@@ -46,7 +46,7 @@ const GithubBox = () => {
         </span>
         <br />
         That's not everything, that I've done. Check out{' '}
-        <Link to="../../pages/webpages/index">webpages</Link> to see my other
+        <Link to="/webpages">webpages</Link> to see my other
         projects.
       </p>
       <GithubCards>

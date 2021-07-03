@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   Collapse,
   Container,
@@ -8,21 +8,26 @@ import {
   NavbarBrand,
   NavbarToggler,
   NavItem,
-} from 'reactstrap'
-import { Link } from 'gatsby'
-import logo from "../../assets/images/logo.svg"
+} from 'reactstrap';
+import { Link } from 'gatsby';
+// @ts-ignore
+import logo from '../../assets/images/logo.svg';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen)
+  const toggle = () => setIsOpen(!isOpen);
+
+  const homeLink = () => (
+    <Link to="/">
+      <img src={logo} alt="logo" style={{ width: '200px' }} />
+    </Link>
+  );
 
   return (
-    <Navbar expand="md" fixed="top" style={{background: "white"}}>
+    <Navbar expand="md" fixed="top" style={{ background: 'white' }}>
       <Container>
-        <NavbarBrand href="/">
-          <img src={logo} alt="logo" style={{width: "200px"}} />
-        </NavbarBrand>
+        <NavbarBrand tag={homeLink} />
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>
@@ -36,11 +41,11 @@ const Header = () => {
                 Webpages
               </Link>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <Link className="nav-link" to="/playground/">
                 Playground
               </Link>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <Link className="nav-link" to="/contact/">
                 Contact
@@ -50,15 +55,15 @@ const Header = () => {
         </Collapse>
       </Container>
     </Navbar>
-  )
-}
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
