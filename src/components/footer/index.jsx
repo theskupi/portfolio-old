@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'reactstrap'
 import styled from 'styled-components'
+// @ts-ignore
 import footerSvg from '../../assets/images/footer.svg'
 
 const FooterWrapper = styled.footer`
