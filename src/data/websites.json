@@ -2,7 +2,8 @@
   {
     "id": 1,
     "name": "Ahome",
-    "url": "https://ahome.cz/"
+    "url": "https://ahome.cz/",
+    "img": "ahome.png"
   },
   {
     "id": 25,

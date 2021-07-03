@@ -1,11 +1,12 @@
-import Header from "./header/"
-import Layout from "./layout/"
-import Seo from "./seo"
-import Footer from "./footer"
-import Hero from "./hero"
-import Contact from "./contact"
-import About from "./about"
-import GithubBox from "./github-box"
-import WebsitesGrid from "./websites-grid"
+import Header from "./Header"
+import Layout from "./Layout"
+import Seo from "./Seo"
+import Footer from "./Footer"
+import Hero from "./Hero"
+import Contact from "./Contact"
+import About from "./About"
+import GithubBox from "./GithubBox"
+import WebsitesGrid from "./WebsitesGrid"
+import PageHeader from "./PageHeader"
 
-export { Header, Layout, Seo, Footer, Hero, Contact, About, GithubBox, WebsitesGrid }
+export { Header, Layout, Seo, Footer, Hero, Contact, About, GithubBox, WebsitesGrid, PageHeader }

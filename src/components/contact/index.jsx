@@ -1,8 +1,8 @@
-import React from 'react'
-import { Col, Row } from 'reactstrap'
-import Form from './form'
-import Lottie from 'react-lottie'
-import * as animationData from '../../assets/animations/contact-animation.json'
+import React from 'react';
+import { Col, Row } from 'reactstrap';
+import Form from './Form';
+import Lottie from 'react-lottie';
+import * as animationData from '../../assets/animations/contact-animation.json';
 
 const defaultOptions = {
   loop: false,
@@ -11,7 +11,7 @@ const defaultOptions = {
   rendererSettings: {
     preserveAspectRatio: 'xMidYMid slice',
   },
-}
+};
 
 const Contact = () => (
   <Row>
@@ -22,6 +22,6 @@ const Contact = () => (
       <Lottie options={defaultOptions} height={600} width={600} />
     </Col>
   </Row>
-)
+);
 
-export default Contact
+export default Contact;
