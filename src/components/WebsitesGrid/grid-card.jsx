@@ -1,15 +1,14 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import { WebsitesGridCard } from './styles';
 
-const GridCard = ({ pageData }) => {
+const GridCard = ({ pageData, imgUrl }) => {
   return (
-    <WebsitesGridCard>
-      <a target="_blank" rel="noreferrer" href={pageData.url}>
-        <StaticImage src="../../assets/images/screens/ahome.png" alt={`website-${pageData.name}`} placeholder="blurred" />
-        <span>{pageData.name}</span>
+    <div className="websitesCol">
+      <div className="photo-container" style={{ backgroundImage: `url(${imgUrl && imgUrl.node.publicURL})` }}></div>
+
+      <a href={pageData.url} target="_blank" rel="noreferrer" className="slide">
+        {pageData.name}
       </a>
-    </WebsitesGridCard>
+    </div>
   );
 };
 
