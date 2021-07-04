@@ -1,8 +1,17 @@
 import * as React from 'react';
 import { Seo, Layout, WebsitesGrid, PageHeader } from '../../components/index';
 import { StaticImage } from 'gatsby-plugin-image';
-import { FaWordpressSimple, FaHtml5, FaSass, FaOpencart } from 'react-icons/fa';
+import { FaWordpressSimple, FaHtml5, FaSass, FaOpencart, FaPhp } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
+import styled from 'styled-components';
+
+const BadgesWrap = styled.div`
+  font-size: 1.3rem;
+  span {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+`;
 
 const Webpages = () => (
   <Layout>
@@ -15,23 +24,26 @@ const Webpages = () => (
         </a>{' '}
         company. They were coded on the basis of custom design and they are customizable from Wordpress or OpenCart CMS.
       </p>
-      <div>
-        <span className="badge bg-secondary me-1">
-          <FaHtml5 /> HTML
+      <BadgesWrap>
+        <span className="badge bg-secondary">
+          <FaHtml5 className="me-1" /> HTML
         </span>
-        <span className="badge bg-secondary me-1">
-          <FaSass /> Sass
+        <span className="badge bg-secondary">
+          <FaSass className="me-1" /> Sass
         </span>
-        <span className="badge bg-secondary me-1">
-          <SiJavascript /> JavaScript
+        <span className="badge bg-secondary">
+          <SiJavascript className="me-1" /> JavaScript
         </span>
-        <span className="badge bg-secondary me-1">
-          <FaWordpressSimple /> Wordpress
+        <span className="badge bg-secondary">
+          <FaPhp className="me-1" /> PHP
         </span>
-        <span className="badge bg-secondary me-1">
-          <FaOpencart /> Opencart
+        <span className="badge bg-secondary">
+          <FaWordpressSimple className="me-1" /> Wordpress
         </span>
-      </div>
+        <span className="badge bg-secondary">
+          <FaOpencart className="me-1" /> Opencart
+        </span>
+      </BadgesWrap>
     </PageHeader>
     <WebsitesGrid />
   </Layout>

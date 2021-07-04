@@ -55,7 +55,7 @@ const GithubBox = () => {
             <h4>
               <a href={node.url}>{node.name}</a>
             </h4>
-            <p>{node.description}</p>
+            <div>{node.description}</div>
             <Languages>
               {node.languages.nodes.map(({ id, name }) => (
                 <span className="badge bg-light text-dark me-1" key={id}>
