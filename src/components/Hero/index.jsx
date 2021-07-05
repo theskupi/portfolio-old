@@ -5,7 +5,7 @@ import * as animationData from '../../assets/animations/hero-animation.json'
 import { HeroWrap } from './style'
 
 const defaultOptions = {
-  loop: true,
+  loop: false,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
