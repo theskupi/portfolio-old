@@ -45,4 +45,19 @@ export const GithubCard = styled.div`
 
 export const Languages = styled.div`
   margin-top: auto;
-`
+  /* .js {
+    background: #f1e05a;
+  }
+  .scss {
+    background: #c6538c;
+  }
+  .css {
+    background: #563d7c;
+  }
+  .html {
+    background: #e34c26;
+  }
+  .php {
+    background: #4f5d95;
+  } */
+`;

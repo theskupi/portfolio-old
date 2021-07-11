@@ -25,6 +25,7 @@ const GithubBox = () => {
                     nodes {
                       id
                       name
+                      color
                     }
                   }
                 }
@@ -57,8 +58,8 @@ const GithubBox = () => {
             </h4>
             <div>{node.description}</div>
             <Languages>
-              {node.languages.nodes.map(({ id, name }) => (
-                <span className="badge bg-light text-dark me-1" key={id}>
+              {node.languages.nodes.map(({ id, name, color }) => (
+                <span className={`badge me-1 ${name === "JavaScript" && "text-dark"}`} key={id} style={{backgroundColor: color}}>
                   {name}
                 </span>
               ))}
