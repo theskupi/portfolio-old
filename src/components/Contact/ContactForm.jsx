@@ -65,11 +65,7 @@ const ContactForm = () => {
                 <Field name={cContactForm.message} component="textarea" id={cContactForm.message} className="form-control" style={{ minHeight: '230px' }} />
                 <ErrorMessage name={cContactForm.message} component={FormFeedback} />
               </div>
-              <ReCAPTCHA
-                sitekey="6Ld8EYAbAAAAAOAJwoiIMlctIj5731s2httWqV4W"
-                // {process.env.RECAPTCHA_KEY}
-                onChange={(value) => setFieldValue(cContactForm.captcha, value)}
-              />
+              <ReCAPTCHA sitekey={process.env.RECAPTCHA_KEY} onChange={(value) => setFieldValue(cContactForm.captcha, value)} />
 
               <Button type="submit" disabled={isSubmitting} className="mt-2">
                 Send
