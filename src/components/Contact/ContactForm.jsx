@@ -45,28 +45,37 @@ const ContactForm = () => {
             <code data-testid="content">{JSON.stringify(errors, null, 2)}</code>
             </pre>
           </div> */}
-          <div className="mb-2">
-            <Label for={cContactForm.name}>Name: </Label>
-            <Field name={cContactForm.name} id={cContactForm.name} className="form-control" />
-            <ErrorMessage name={cContactForm.name} component={FormFeedback} />
-          </div>
-          <div className="mb-2">
-            <Label for={cContactForm.email}>Email: </Label>
-            <Field name={cContactForm.email} id={cContactForm.email} className="form-control" />
-            <ErrorMessage name={cContactForm.email} component={FormFeedback} />
-          </div>
-          <div className="mb-2">
-            <Label for={cContactForm.message}>Message: </Label>
-            <Field name={cContactForm.message} component="textarea" id={cContactForm.message} className="form-control" style={{ minHeight: '230px' }} />
-            <ErrorMessage name={cContactForm.message} component={FormFeedback} />
-          </div>
-          <ReCAPTCHA sitekey={process.env.RECAPTCHA_KEY} onChange={(value) => setFieldValue(cContactForm.captcha, value)} />
 
-          <Button type="submit" disabled={isSubmitting} className="mt-2">
-            Send
-          </Button>
+          {submit.succeeded ? (
+            <div>Thank you for your message!</div>
+          ) : (
+            <>
+              <div className="mb-2">
+                <Label for={cContactForm.name}>Name: </Label>
+                <Field name={cContactForm.name} id={cContactForm.name} className="form-control" />
+                <ErrorMessage name={cContactForm.name} component={FormFeedback} />
+              </div>
+              <div className="mb-2">
+                <Label for={cContactForm.email}>Email: </Label>
+                <Field name={cContactForm.email} id={cContactForm.email} className="form-control" />
+                <ErrorMessage name={cContactForm.email} component={FormFeedback} />
+              </div>
+              <div className="mb-2">
+                <Label for={cContactForm.message}>Message: </Label>
+                <Field name={cContactForm.message} component="textarea" id={cContactForm.message} className="form-control" style={{ minHeight: '230px' }} />
+                <ErrorMessage name={cContactForm.message} component={FormFeedback} />
+              </div>
+              <ReCAPTCHA
+                sitekey="6Ld8EYAbAAAAAOAJwoiIMlctIj5731s2httWqV4W"
+                // {process.env.RECAPTCHA_KEY}
+                onChange={(value) => setFieldValue(cContactForm.captcha, value)}
+              />
 
-          {submit.succeeded && <div>Thank you for your message!</div>}
+              <Button type="submit" disabled={isSubmitting} className="mt-2">
+                Send
+              </Button>
+            </>
+          )}
         </Form>
       )}
     </Formik>
