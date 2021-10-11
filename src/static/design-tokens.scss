@@ -1,0 +1,149 @@
+
+/* Selected row */
+$dt-color-selected: #B7E4FF;
+/* Disabled inputs etc */
+$dt-color-disabled: #E9ECEF;
+/* Highlights */
+$dt-color-highlights: #DC0069;
+/* Old info */
+$dt-color-cyan: #17A2B8;
+/* Danger */
+$dt-color-danger: #DC3545;
+/* Hover color */
+$dt-color-hovered: #ECF0F1;
+/* Warning */
+$dt-color-warning: #FFC107;
+/* Sidebar background */
+$dt-color-sidebar-bg: #2c3e50;
+/* Sidebar active item */
+$dt-color-sidebar-active: #3498DB;
+/* Success */
+$dt-color-success: #28a745;
+$dt-color-gray-100: #F8F8F8;
+$dt-color-gray-200: #F5F5F5;
+$dt-color-gray-300: #E6E6E6;
+$dt-color-gray-400: #CACACA;
+$dt-color-gray-500: #BFBFBF;
+$dt-color-gray-600: #969696;
+$dt-color-gray-700: #808080;
+$dt-color-gray-800: #404040;
+$dt-color-gray-900: #171717;
+$dt-color-black: #000000;
+$dt-color-white: #FFFFFF;
+$dt-color-blue-100: #d1efff;
+$dt-color-blue-200: #80d3ff;
+$dt-color-blue-300: #00A7FF;
+$dt-color-blue-400: #0074b2;
+$dt-color-blue-500: #005b8c;
+$dt-color-green-100: #e3f3e3;
+$dt-color-green-200: #addbad;
+$dt-color-green-300: #5CB85C;
+$dt-color-green-400: #408040;
+$dt-color-green-500: #326532;
+$dt-color-red-100: #fae6e8;
+$dt-color-red-200: #ed9aa2;
+$dt-color-red-300: #DC3545;
+$dt-color-red-400: #992430;
+$dt-color-red-500: #781d25;
+$dt-color-yellow-100: #fff6de;
+$dt-color-yellow-200: #ffe083;
+$dt-color-yellow-300: #FFC107;
+$dt-color-yellow-400: #b28604;
+$dt-color-yellow-500: #8c6903;
+$dt-color-purple-100: #e8e3f0;
+$dt-color-purple-200: #d3cae3;
+$dt-color-purple-300: #A896C7;
+$dt-color-purple-400: #75688a;
+$dt-color-purple-500: #5c526d;
+/* $box-shadow-sm */
+$dt-box-shadow-small: 0 .125rem .25rem rgba(0,0,0, .075);
+/* $box-shadow */
+$dt-box-shadow-medium: 0 .5rem 1rem rgba(0,0,0, .15);
+/* $box-shadow-lg */
+$dt-box-shadow-large: 0 1rem 3rem rgba(0,0,0, .175);
+/* $border-radius-sm / 2px */
+$dt-border-radius-small: .125rem;
+/* $border-radius / 4px */
+$dt-border-radius-medium: .25rem;
+/* $border-radius-lg / 6px */
+$dt-border-radius-large: .375rem;
+/* $border-radius-circle / 50% */
+$dt-border-radius-circle: 50%;
+/* $border-color */
+$dt-border-color: rgb(222, 226, 230);
+/* $border-width */
+$dt-border-width: 1px;
+/* breadcrumb padding */
+$dt-breadcrumb-p: .75rem 1rem;
+/* * 80px / 5rem */
+$dt-spacing-80: 5rem;
+/* page header margin bottom */
+$dt-page-header-mb: 1rem;
+/* * 72px / 4.5rem */
+$dt-spacing-72: 4.5rem;
+/* * 40px / 2.5rem */
+$dt-spacing-40: 2.5rem;
+/* * 64px / 4rem */
+$dt-spacing-64: 4rem;
+/* * 32px / 2rem */
+$dt-spacing-32: 2rem;
+/* breadcrumb margin left */
+$dt-breadcrumb-ml: -0.75rem;;
+/* * 56px / 3.5rem */
+$dt-spacing-56: 3.5rem;
+/* grid gutter width */
+$dt-grid-gutter-width: 30px;
+/* * 8px / 0.5rem */
+$dt-spacing-8: 0.5rem;
+/* * 24px / 1.5rem */
+$dt-spacing-24: 1.5rem;
+/* * 48px / 3rem */
+$dt-spacing-48: 3rem;
+/* .card padding */
+$dt-card-p: 1rem;
+/* * 16px / 1rem */
+$dt-spacing-16: 1rem;
+/* grid columns count */
+$dt-grid-columns: 12;
+/* .card margin bottom */
+$dt-card-mb: 1rem;
+/* page header padding top */
+$dt-page-header-pt: 1rem;
+/* .nav-link padding */
+$dt-nav-link-p: 0.75rem 1rem;
+/* page header margin top */
+$dt-page-header-mt: -1.5rem;
+/* .page-header h2 margin bottom */
+$dt-page-header-h2-mb: 0.75rem;
+/* .card-header margin */
+$dt-card-header-m: 0 -0.625rem -0.75rem -0.625rem;
+/* #content vertical padding */
+$dt-content-padding: 1.5rem;
+/* .btn padding */
+$dt-btn-p: 0.375rem 0.75remm;
+/* .card-title margin bottom */
+$dt-card-title-mb: 0.75rem;
+/* .card-title font weight */
+$dt-card-title-fw: 400;
+/* .nav-link font weight */
+$dt-nav-link-fw: 400;
+/* .horizontal-steps font size */
+$dt-h-steps-fs: 1rem;
+/* .horizontal-steps line height */
+$dt-h-steps-lh: 2rem;
+/* .page-header h2 font size */
+$dt-page-header-h2-fs: 2rem;
+/* .page-header h2 font weight */
+$dt-page-header-h2-fw: 300;
+/* .btn font size */
+$dt-btn-fs: 1rem;
+/* .horizontal-steps width */
+$dt-h-steps-w: 2rem;
+/* .horizontal-steps height */
+$dt-h-steps-h: 2rem;
+/* .horizontal-steps number before left */
+$dt-h-steps-before-l: -10px;
+/* .horizontal-steps number before width */
+$dt-h-steps-before-w: 9px;
+/* .btn border radius */
+$dt-btn-br: .25rem;
