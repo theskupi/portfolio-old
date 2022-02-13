@@ -20,6 +20,14 @@ export const WebsitesContainer = styled.div`
     will-change: transform;
     transform: translateY(100%);
     cursor: pointer;
+    background: rgba(25, 1, 21, 0.8);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
   }
 
   .websitesRow:hover ~ .websitesRow .slide {
@@ -39,6 +47,9 @@ export const WebsitesContainer = styled.div`
 
   .websitesRow {
     display: flex;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .websitesCol {
@@ -59,27 +70,7 @@ export const WebsitesContainer = styled.div`
     transform-origin: bottom right;
     background-position: top left;
   }
-  /* .photo-container::before {
-    background: linear-gradient(transparent, rgba(67, 17, 51, 0.5), #000320);
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  } */
   .websitesCol:hover .photo-container {
     transform: scale(1.25);
-  }
-
-  .slide {
-    background: rgba(25, 1, 21, 0.8);
-    padding: 0 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
   }
 `;

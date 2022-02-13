@@ -1,15 +1,18 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const GithubBoxWrap = styled.div`
   padding-bottom: 12rem;
-`
+`;
 
 export const GithubCards = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
-`
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
 
 export const GithubCard = styled.div`
   padding: 2rem;
@@ -17,7 +20,7 @@ export const GithubCard = styled.div`
   border-radius: 2rem;
   width: 19%;
   color: white;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,7 +28,7 @@ export const GithubCard = styled.div`
     color: #fff;
     text-decoration: none;
     &::before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       width: 100%;
@@ -36,12 +39,15 @@ export const GithubCard = styled.div`
   }
   &:hover {
     box-shadow: 5px 5px #a3a3ff, 10px 10px #d6dfff;
-    transform: translate3d(-10px, -10px, 0)
+    transform: translate3d(-10px, -10px, 0);
   }
   h4 {
     text-transform: capitalize;
   }
-`
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
 
 export const Languages = styled.div`
   margin-top: auto;

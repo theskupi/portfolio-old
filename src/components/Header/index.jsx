@@ -25,7 +25,7 @@ const Header = () => {
   );
 
   return (
-    <Navbar expand="md" fixed="top" style={{ background: 'white' }}>
+    <Navbar className='navbar-light' expand="md" fixed="top" style={{ backgroundColor: 'white' }}>
       <Container>
         <NavbarBrand tag={homeLink} />
         <NavbarToggler onClick={toggle} />
@@ -41,11 +41,6 @@ const Header = () => {
                 Webpages
               </Link>
             </NavItem>
-            {/* <NavItem>
-              <Link className="nav-link" to="/playground/">
-                Playground
-              </Link>
-            </NavItem> */}
             <NavItem>
               <Link className="nav-link" to="/contact/">
                 Contact
