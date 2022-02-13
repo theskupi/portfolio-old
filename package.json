@@ -3,6 +3,10 @@
   "description": "Portfolio of Vlastimil Skupien",
   "version": "0.1.0",
   "author": "Vlastimil Skupien",
+    "engines": {
+    "npm": "6.x",
+    "node": "14.x"
+  },
   "dependencies": {
     "@formspree/react": "^2.2.3",
     "axios": "^0.21.1",
